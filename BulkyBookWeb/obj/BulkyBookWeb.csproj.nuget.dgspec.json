@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\f93405b\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
+    "C:\\Users\\frabo\\OneDrive\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
   },
   "projects": {
-    "D:\\Users\\f93405b\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {
+    "C:\\Users\\frabo\\OneDrive\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\f93405b\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
+        "projectUniqueName": "C:\\Users\\frabo\\OneDrive\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
         "projectName": "BulkyBookWeb",
-        "projectPath": "D:\\Users\\f93405b\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
-        "packagesPath": "D:\\Users\\f93405b\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\f93405b\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\obj\\",
+        "projectPath": "C:\\Users\\frabo\\OneDrive\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
+        "packagesPath": "C:\\Users\\frabo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frabo\\OneDrive\\Documents\\GitHub\\BulkyBook\\BulkyBookWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\Users\\f93405b\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\frabo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
