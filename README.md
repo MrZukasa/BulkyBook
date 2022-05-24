@@ -46,3 +46,25 @@ In ***_ViewImports*** è richiamata una libreria che si chiama `@addTagHelper *,
     <form class="form-horizontal" method="post" asp-controller="Users" asp-action="Index"></form>
     <form class="form-horizontal" method="post" asp-page="Users/Index"></form>
     ```
+
+  ### Data Annotations
+  - Quando si usa `[Key]` prima della dichiarazione di una proprietà nel costruttore si sta usando la Data Annotations
+  > Il vantaggio dell'uso dei validator di annotazione dati consiste nel fatto che consentono di eseguire la convalida semplicemente aggiungendo uno o più attributi, ad esempio l'attributo Required o StringLength, a una proprietà di classe.
+  
+  ### SQL Server
+  Per poter avere una base di dati in locale è necessario installarsi 
+  - [SQL Server](https://www.microsoft.com/it-it/sql-server/sql-server-downloads)
+  - [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/it-it/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) se serve, ma pare che con l'estensione di VSCode si possa fare tutto.
+  - Nel file di progetto denominato `appsettings.json` possiamo aggiungere la stringa di connessione al database
+  - Per aggiungere il Framework Entity Core è necessario usare `dotnet add package Microsoft.EntityFrameworkCore.SqlServer` ed includerne la reference `using Microsoft.EntityFrameworkCore` dentro il file.cs che si occuperà del database.
+  - Eredito la classe [DbContext](https://docs.microsoft.com/it-it/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0) dal Framework EntityFrameworkCore e da li ne creo il costruttore per la tabella `category` dichiarata come models .cs
+  - Aggiungo al programma principale la reference realtiva al framework.sqlserver ed alla cartella `data` cosi da importare il mio models Category.
+  - Aggiungo al builder il servizio per creare la connessione ed all'interno configuro la stringa di connessioneal DB: 
+    ```c#
+    builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+      builder.Configuration.GetConnectionString("DefaultConnection")
+    ))
+    ```
+  - Prima di creare una Migration per aggiungere i dati nel DB è necessario installare un ulteriore pacchetto `dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet` ed il `dotnet add package Microsoft.EntityFrameworkCore.Design`
+  - Per aggiungere la Migration vera e propria si farà `dotnet ef migrations add nomemigration`
+  - Per confermare la Migration e pusharla sul DB si farà `dotnet ef database update`
