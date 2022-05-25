@@ -38,6 +38,7 @@ public class CategoryController : Controller
             _db.Categories.Add(obj);
             // pusho i dati al DB
             _db.SaveChanges();
+            TempData["Success"] = "Success";
             return RedirectToAction("Index");
         }
         return View(obj);
@@ -70,6 +71,7 @@ public class CategoryController : Controller
         if (ModelState.IsValid){            
             _db.Categories.Update(obj);        
             _db.SaveChanges();
+            TempData["Success"] = "Success";
             return RedirectToAction("Index");
         }
         return View(obj);
@@ -91,17 +93,18 @@ public class CategoryController : Controller
         return View(categoryFromDb);
     }
     // POST
-    [HttpPost]
+    [HttpPost,ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public IActionResult Delete(int? Id)
+    public IActionResult DeletePOST(int? Id)
     {
         var obj = _db.Categories.Find(Id);
         if(obj == null)
         {
             return NotFound();
         }        
-            _db.Categories.Update(obj);
+            _db.Categories.Remove(obj);
             _db.SaveChanges();
+            TempData["Success"] = "Success";
             return RedirectToAction("Index");
     }
 }
