@@ -8,45 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BulkyBookWeb
 build_property.RootNamespace = BulkyBookWeb
-build_property.ProjectDir = C:\Users\frabo\OneDrive\Documents\GitHub\BulkyBook\BulkyBookWeb\
+build_property.ProjectDir = d:\Users\f93405b\Documents\GitHub\BulkyBook\BulkyBookWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\frabo\OneDrive\Documents\GitHub\BulkyBook\BulkyBookWeb
+build_property.MSBuildProjectDirectory = d:\Users\f93405b\Documents\GitHub\BulkyBook\BulkyBookWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Category/Create.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Category/Index.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Home/Index.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Home/Privacy.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Shared/Error.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/_ViewImports.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/_ViewStart.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/frabo/OneDrive/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Shared/_Layout.cshtml]
+[d:/Users/f93405b/Documents/GitHub/BulkyBook/BulkyBookWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xaq7ih10jw
