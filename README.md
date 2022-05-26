@@ -158,3 +158,18 @@ Questa partial view contiene degli script jquery che si occupano della validazio
 > ad esempio [DisplayName("Display Order")].
 
 Un'altro modo per avere messaggi d'errore custom è usare dei Data Annotations (sempre dentro il Model) ad esempio `[Range(1,100, ErrorMessage = "Messaggio d'errore!")]`, cosi facendo si controlla il range di un espressione e si riporta il messaggio di errore eventuale.
+
+Per creare le View di Edit e Delete, alla fine ho fatto dei copia incolla, una cosa nuova che ho usato è agiungere il riferimento al form, facendo `<form method="post" asp-action="Edit">` direttamente nella view in questione.
+
+Per visualizzare messaggi di "Success" si utilizzano i temp data, ossia delle richieste che appaiono solo una volta, al refresh spariscono. Nel Model si aggiunge `TempData["Success"] = "Custom Message";` e poi nella view si va a ripescare facendo `@if(TempData["Success"] != null)` e stampando `<h2>@TempData["Success"]</h2>`.
+Volendo si può mettere il richiamo del TempData direttamente in una partial view comune a tutte le view, tanto per richiamarla una volta sola, quindi copio tutto dentro una partial view chiamata _Notification.cshtml e la metto dentro Shared, aggiungo anche la possibilità di mostrare dei messaggi di errore oltre che di successo. Per importare la partial nella index o nella pagina `_Layout.cshtml` (prima di @RenderBody()) uso `<partial name="_Notification"/>`.
+
+>N.B.: un framework per le notifiche javascript è [toastr](https://github.com/CodeSeven/toastr) mi basta aggiungere il riferimento al CSS nel _Layout ed il js file nella partial view dove lo voglio usare, c'è da ricordarsi che toastr usa jquery.
+>> Ricordarsi di richiamare prima jquery e poi il js di toastr
+
+Per usare toastr devo fare uno script dove lo richiamo, cosi:
+```js
+<script type="text/javascript">
+    toastr.success(@TempData["Success"]);
+</script>
+```

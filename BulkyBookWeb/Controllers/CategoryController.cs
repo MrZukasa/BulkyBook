@@ -38,7 +38,7 @@ public class CategoryController : Controller
             _db.Categories.Add(obj);
             // pusho i dati al DB
             _db.SaveChanges();
-            TempData["Success"] = "Success";
+            TempData["Success"] = "Creation Successful";
             return RedirectToAction("Index");
         }
         return View(obj);
@@ -71,7 +71,7 @@ public class CategoryController : Controller
         if (ModelState.IsValid){            
             _db.Categories.Update(obj);        
             _db.SaveChanges();
-            TempData["Success"] = "Success";
+            TempData["Success"] = "Edit Successful";
             return RedirectToAction("Index");
         }
         return View(obj);
@@ -104,7 +104,7 @@ public class CategoryController : Controller
         }        
             _db.Categories.Remove(obj);
             _db.SaveChanges();
-            TempData["Success"] = "Success";
+            TempData["Success"] = "Delete Successful";
             return RedirectToAction("Index");
     }
 }
